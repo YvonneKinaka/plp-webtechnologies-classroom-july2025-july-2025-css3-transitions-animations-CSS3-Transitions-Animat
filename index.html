@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Treats Cupcake Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Part 1: CSS Animation (Fade-in Header) -->
+  <header class="hero">
+    <h1 class="fade-in">Welcome to Sweet Treats</h1>
+    <p class="slide-up">Delicious cupcakes baked fresh daily!</p>
+  </header>
+
+  <!-- Cupcake Menu -->
+  <section class="menu">
+    <h2>Our Cupcakes</h2>
+    <div class="cupcake-cards">
+      <div class="card">
+        <h3>Chocolate</h3>
+        <p>KSh 300 each</p>
+      </div>
+      <div class="card">
+        <h3>Vanilla</h3>
+        <p>KSh 250 each</p>
+      </div>
+      <div class="card">
+        <h3>Strawberry</h3>
+        <p>KSh 275 each</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Section -->
+  <section id="order" class="order">
+    <h2>Place Your Order</h2>
+    <form id="orderForm">
+      <input type="text" id="customerName" placeholder="Your Name" required>
+      <input type="number" id="quantity" placeholder="Number of Cupcakes" required>
+      <button type="submit" class="btn">Order Now</button>
+    </form>
+    <!-- Confirmation Popup -->
+    <div id="confirmation" class="popup hidden">
+      <p id="confirmationMessage"></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sweet Treats Cupcake Shop | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

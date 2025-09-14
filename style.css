@@ -1,0 +1,114 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff8f0;
+  color: #333;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  background: #ffcad4;
+  padding: 40px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  animation: fadeIn 2s ease-in;
+}
+
+.hero p {
+  animation: slideUp 2s ease-in-out;
+}
+
+/* Cupcake Menu */
+.menu {
+  padding: 30px;
+}
+
+.cupcake-cards {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 180px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Order Section */
+.order {
+  background: #fce2e2;
+  padding: 30px;
+}
+
+.order form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: auto;
+}
+
+input, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  background: #e75480;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: #d63c6b;
+  transform: scale(1.1);
+}
+
+/* Popup */
+.popup {
+  margin-top: 15px;
+  padding: 15px;
+  background: #4caf50;
+  color: white;
+  border-radius: 5px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
